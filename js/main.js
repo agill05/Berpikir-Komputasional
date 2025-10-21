@@ -1088,16 +1088,17 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
+            entries.forEach((entry) => {
                 if (entry.isIntersecting) {
+                    const cardIndex = Array.from(topicCards).indexOf(entry.target);
                     // Add delay based on index for staggered animation
                     setTimeout(() => {
-                        if (index % 2 === 0) {
+                        if (cardIndex % 2 === 0) {
                             entry.target.classList.add('animate-left');
                         } else {
                             entry.target.classList.add('animate-right');
                         }
-                    }, index * 200); // 200ms delay between each card
+                    }, cardIndex * 200); // 200ms delay between each card
                 }
             });
         }, observerOptions);
