@@ -1,18 +1,18 @@
-# TODO: Perbaikan Menu Hamburger, Header, dan Footer
+# TODO: Perbaiki Tampilan Nav-Menu Mobile
 
 ## Tugas Utama
-- [ ] Perbaiki tampilan header yang tidak teratur di Microsoft Edge
-- [ ] Perbaiki menu hamburger yang tidak bisa diklik di Chrome
-- [ ] Perbaiki footer yang tidak muncul di Chrome
+- Ubah tampilan nav-menu di mobile agar minimalis (tidak menutupi full layar)
+- Sesuaikan ukuran menu sesuai dengan jumlah item (8 menu items)
 
-## Detail Perbaikan
-- [ ] Ganti backdrop-filter di header dengan fallback CSS untuk kompatibilitas browser
-- [ ] Tambahkan debugging dan perbaiki event listener hamburger menu
-- [ ] Pastikan footer dimuat dengan benar melalui fetch atau fallback
+## Langkah-langkah
+- [x] Edit CSS di main.css untuk bagian mobile nav-menu
+- [x] Ubah width dari 100% menjadi 250px
+- [x] Ubah height dari 100vh menjadi auto atau max-height 80vh
+- [x] Sesuaikan posisi right dari -100% menjadi -250px
+- [x] Test tampilan di browser mobile view
+- [x] Pastikan backdrop tetap berfungsi
 
 ## Status
-- [x] Analisis masalah selesai
-- [ ] Perbaikan CSS header
-- [ ] Perbaikan JS hamburger menu
-- [ ] Perbaikan footer
-- [ ] Testing di Chrome dan Edge
+- [x] Analisis kode selesai
+- [x] Implementasi perubahan
+- [x] Testing
