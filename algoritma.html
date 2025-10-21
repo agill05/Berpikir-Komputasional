@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritma - Media Pembelajaran Berpikir Komputasional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="topic-content">
+            <h2>Algoritma</h2>
+            <p class="description"><strong>Algoritma</strong> adalah serangkaian langkah logis dan sistematis yang dirancang untuk menyelesaikan masalah atau tugas tertentu. Ini bisa berupa urutan instruksi yang dipahami manusia atau kode yang dapat dieksekusi komputer. Contohnya adalah resep masakan, yang memberikan langkah-langkah terstruktur untuk membuat hidangan, atau algoritma komputer untuk mengurutkan data. </p>
+            <div class="learning-objectives">
+                <h3>Tujuan Pembelajaran</h3>
+                <ul>
+                    <li>Memahami konsep algoritma</li>
+                    <li>Membedakan pseudocode dan flowchart</li>
+                    <li>Membuat algoritma sederhana</li>
+                </ul>
+            </div>
+
+            <div class="media-content">
+                <video controls>
+                    <source src="video/Algoritma.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+                <p class="video-caption">Video penjelasan tentang algoritma</p>
+            </div>
+
+            <div class="subtopics">
+                <h3>Submateri</h3>
+                <div class="subtopic">
+                    <h4>Pengertian Algoritma</h4>
+                    <p>Algoritma adalah urutan langkah-langkah logis dan terstruktur untuk menyelesaikan masalah atau mencapai tujuan tertentu. Dalam berpikir komputasional, algoritma merupakan jembatan antara masalah dan solusi, yang harus jelas, terbatas, dan menghasilkan output yang benar. Algoritma tidak terbatas pada komputer saja, tetapi juga digunakan dalam kehidupan sehari-hari seperti resep masak atau instruksi perakitan.</p>
+                    <div class="media-content">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop&crop=center" alt="Ilustrasi Pengertian Algoritma" class="topic-image">
+                        <p class="image-caption">Ilustrasi konsep algoritma sebagai urutan langkah</p>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Konsep Langkah Demi Langkah</h4>
+                    <p>Algoritma terdiri dari langkah-langkah sequential yang harus diikuti secara berurutan. Setiap langkah harus unambiguous (jelas), executable (dapat dieksekusi), dan terminating (berakhir). Algoritma yang baik memiliki input yang jelas, proses yang sistematis, dan output yang dapat diprediksi. Kesalahan dalam satu langkah dapat mempengaruhi keseluruhan hasil.</p>
+                </div>
+                <div class="subtopic">
+                    <h4>Pseudocode vs Flowchart</h4>
+                    <p>Pseudocode adalah representasi algoritma dalam bahasa natural yang sederhana, menggunakan struktur seperti IF-THEN-ELSE, WHILE, FOR, tanpa syntax bahasa pemrograman spesifik. Flowchart adalah representasi visual algoritma menggunakan simbol-simbol seperti oval (start/end), rectangle (process), diamond (decision), dan arrow (flow). Kedua cara ini membantu dalam perencanaan algoritma sebelum implementasi kode.</p>
+                    <div class="interactive-demo">
+                        <h5>Demo Interaktif: Pseudocode vs Flowchart</h5>
+                        <div class="code-flowchart">
+                            <div class="pseudocode-example">
+                                <h6>Pseudocode:</h6>
+                                <pre><code>IF skor >= 80 kemudian
+    nilai = "A"
+ELSE IF skor  >= 70 kemudian
+    nilai = "B"
+ELSE
+    nilai = "C"
+END IF</code></pre>
+                            </div>
+                            <div class="flowchart-placeholder">
+                                <img src="image/flow.jpg" alt="Contoh Flowchart" class="topic-image">
+                                <p>Flowchart untuk penilaian grade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Contoh Algoritma Sederhana</h4>
+                    <p>Algoritma membuat teh: 1) Siapkan bahan (teh, air, gula), 2) Rebus air hingga mendidih, 3) Masukkan teh ke dalam cangkir, 4) Tuangkan air panas, 5) Tambahkan gula sesuai selera, 6) Aduk hingga rata. Algoritma lain: mencari nilai maksimum dalam array - bandingkan setiap elemen dengan nilai maksimum saat ini, update jika ditemukan yang lebih besar.</p>
+                    <div class="media-content">
+                        <img src="https://imgx.sonora.id/crop/0x0:0x0/x/photo/2023/09/05/647b24304088ejpg-20230905064823.jpg" alt="Ilustrasi Algoritma Sederhana" class="topic-image">
+                        <p class="image-caption">Contoh algoritma membuat teh</p>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Jenis-Jenis Algoritma</h4>
+                    <p>Algoritma dapat diklasifikasikan berdasarkan pendekatan: brute force (mencoba semua kemungkinan), greedy (memilih solusi optimal lokal), divide and conquer (pecah dan gabung), dynamic programming (menyimpan hasil submasalah), dan backtracking (coba-coba dengan mundur jika gagal). Setiap jenis memiliki kelebihan dan kelemahan tergantung konteks masalah.</p>
+                    <div class="interactive-demo">
+                        <h5>Demo Interaktif: Jenis Algoritma</h5>
+                        <div class="algorithm-types">
+                            <button class="algo-btn" data-type="brute">Brute Force</button>
+                            <button class="algo-btn" data-type="greedy">Greedy</button>
+                            <button class="algo-btn" data-type="divide">Divide & Conquer</button>
+                            <div id="algorithm-explanation"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Analisis Algoritma</h4>
+                    <p>Algoritma dievaluasi berdasarkan correctness (kebenaran), time complexity (waktu eksekusi), space complexity (penggunaan memori), dan readability (kemudahan dibaca). Big O notation digunakan untuk mengukur kompleksitas, seperti O(1) untuk konstan, O(n) untuk linear, O(n²) untuk kuadratik. Analisis ini penting untuk memilih algoritma yang efisien.</p>
+                    <div class="interactive-demo">
+                        <h5>Demo Interaktif: Big O Complexity</h5>
+                        <div class="complexity-demo">
+                            <select id="complexity-select">
+                                <option value="O(1)">O(1) - Constant</option>
+                                <option value="O(log n)">O(log n) - Logarithmic</option>
+                                <option value="O(n)">O(n) - Linear</option>
+                                <option value="O(n log n)">O(n log n) - Linearithmic</option>
+                                <option value="O(n^2)">O(n²) - Quadratic</option>
+                            </select>
+                            <button id="show-complexity">Tampilkan Contoh</button>
+                            <div id="complexity-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Penerapan Algoritma dalam Kehidupan Modern</h4>
+                    <p>Algoritma digunakan dalam search engine (Google), social media (Facebook recommendation), navigation (Google Maps), e-commerce (Amazon suggestions), dan banyak lagi. Algoritma machine learning seperti neural networks menjadi dasar AI modern. Memahami algoritma membantu kita memahami bagaimana teknologi bekerja dan membuat keputusan yang lebih baik.</p>
+                </div>
+                <div class="subtopic">
+                    <h4>Etika dalam Algoritma</h4>
+                    <p>Etika algoritma melibatkan pertimbangan moral dalam desain dan implementasi algoritma, seperti fairness (keadilan) untuk menghindari bias diskriminatif, transparency (transparansi) agar pengguna memahami bagaimana keputusan dibuat, dan accountability (pertanggungjawaban) untuk memastikan algoritma tidak merugikan kelompok tertentu. Contohnya, algoritma rekomendasi media sosial harus menghindari echo chambers yang memperkuat stereotip, dan algoritma hiring harus bebas dari bias gender atau rasial.</p>
+                    <div class="media-content">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop&crop=center" alt="Ilustrasi Etika Algoritma" class="topic-image">
+                        <p class="image-caption">Pertimbangan etika dalam pengembangan algoritma</p>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Algoritma dalam Kecerdasan Buatan</h4>
+                    <p>Dalam AI, algoritma seperti machine learning (supervised, unsupervised, reinforcement learning) dan deep learning (neural networks) digunakan untuk membuat model yang belajar dari data. Algoritma ini mengabstraksi pola kompleks dari data besar, seperti pengenalan gambar atau prediksi cuaca. Tantangan termasuk overfitting, interpretability, dan computational cost, namun aplikasi seperti autonomous vehicles dan medical diagnosis menunjukkan potensinya yang besar.</p>
+                    <div class="interactive-demo">
+                        <h5>Demo Interaktif: Contoh Algoritma AI Sederhana</h5>
+                        <div class="ai-demo">
+                            <p>Masukkan data sederhana untuk prediksi:</p>
+                            <input type="number" id="input-x" placeholder="Nilai X">
+                            <button id="predict" class="algo-btn">Prediksi Y</button>
+                            <p id="prediction-result"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-activity">
+                <h3>Aktivitas Interaktif: Susun Flowchart</h3>
+                <p>Susun langkah-langkah mencari nilai maksimum:</p>
+                <div class="flowchart-activity">
+                    <div class="steps">
+                        <div class="step" draggable="true">Mulai</div>
+                        <div class="step" draggable="true">Input angka</div>
+                        <div class="step" draggable="true">Bandingkan</div>
+                        <div class="step" draggable="true">Output maksimum</div>
+                        <div class="step" draggable="true">Selesai</div>
+                    </div>
+                    <div class="flowchart-canvas" id="flowchart-canvas"></div>
+                    <button id="check-flowchart">Periksa Flowchart</button>
+                    <p id="flowchart-feedback"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

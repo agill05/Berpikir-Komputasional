@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstraksi - Media Pembelajaran Berpikir Komputasional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="topic-content">
+            <h2>Abstraksi</h2>
+            <p class="description"><strong>Abstraksi</strong> adalah proses menyederhanakan kompleksitas dengan menggeneralisasi ide atau konsep, fokus pada inti, dan mengabaikan detail yang tidak perlu. Proses ini penting dalam berbagai bidang seperti filsafat, ilmu komputer, seni, dan kehidupan sehari-hari untuk memahami ide-ide yang rumit dengan lebih mudah, misalnya melalui ringkasan, generalisasi, atau penyembunyian detail implementasi. </p>
+            <div class="learning-objectives">
+                <h3>Tujuan Pembelajaran</h3>
+                <ul>
+                    <li>Memahami konsep abstraksi</li>
+                    <li>Menerapkan abstraksi dalam kehidupan sehari-hari</li>
+                    <li>Menggunakan abstraksi dalam komputasi</li>
+                </ul>
+            </div>
+
+            <div class="media-content">
+                <video controls>
+                    <source src="video/Abstraksi.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+                <p class="video-caption">Video penjelasan tentang abstraksi</p>
+            </div>
+
+            <div class="subtopics">
+                <h3>Submateri</h3>
+                <div class="subtopic">
+                    <h4>Pentingnya Abstraksi</h4>
+                    <p>Abstraksi adalah proses menyaring informasi yang relevan dan mengabaikan detail yang tidak penting untuk fokus pada esensi masalah. Dalam berpikir komputasional, abstraksi membantu kita mengelola kompleksitas dengan menyederhanakan representasi masalah, sehingga lebih mudah dipahami dan diselesaikan. Teknik ini fundamental dalam pengembangan software dan pemecahan masalah kompleks di dunia nyata.</p>
+                    <div class="media-content">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop&crop=center" alt="Ilustrasi Konsep Abstraksi" class="topic-image">
+                        <p class="image-caption">Ilustrasi bagaimana abstraksi menyederhanakan kompleksitas</p>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Abstraksi dalam Kehidupan Sehari-hari</h4>
+                    <p>Abstraksi terlihat dalam penggunaan peta yang menyederhanakan lokasi dunia dengan mengabaikan detail seperti tekstur tanah atau jenis vegetasi, fokus hanya pada jalan dan landmark penting. Menu restoran menyaring pilihan makanan dengan mengelompokkan berdasarkan kategori tanpa menjelaskan proses memasak detail. Abstraksi juga ada dalam perencanaan keuangan bulanan yang fokus pada total pengeluaran tanpa detail setiap transaksi kecil.</p>
+                </div>
+                <div class="subtopic">
+                    <h4>Abstraksi dalam Komputasi</h4>
+                    <p>Dalam pemrograman, abstraksi digunakan untuk membuat fungsi yang menyederhanakan operasi kompleks. Misalnya, fungsi sort() mengabstraksi algoritma pengurutan kompleks menjadi satu perintah sederhana. Class dan object-oriented programming mengabstraksi data dan behavior menjadi entitas yang mudah dimanipulasi. API (Application Programming Interface) mengabstraksi fungsionalitas kompleks menjadi interface sederhana untuk digunakan developer lain.</p>
+                    <div class="interactive-demo">
+                        <h5>Demo Interaktif: Abstraksi dalam Kode</h5>
+                        <div class="code-abstraction">
+                            <div class="code-example">
+                                <h6>Kode Tanpa Abstraksi:</h6>
+                                <pre><code>let arr = [3, 1, 4, 1, 5];
+// Manual sorting logic here...</code></pre>
+                            </div>
+                            <div class="code-example">
+                                <h6>Dengan Abstraksi:</h6>
+                                <pre><code>let arr = [3, 1, 4, 1, 5];
+arr.sort(); // Simple abstraction</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Tingkatan Abstraksi</h4>
+                    <p>Abstraksi memiliki tingkatan dari rendah ke tinggi. Abstraksi tingkat rendah melibatkan detail hardware seperti bit dan byte, sedangkan abstraksi tingkat tinggi seperti bahasa pemrograman yang menyembunyikan detail tersebut. Dalam desain sistem, kita menggunakan multiple layers of abstraction untuk mengelola kompleksitas, mulai dari user interface hingga database operations.</p>
+                    <div class="media-content">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop&crop=center" alt="Ilustrasi Tingkatan Abstraksi" class="topic-image">
+                        <p class="image-caption">Diagram tingkatan abstraksi dalam sistem komputer</p>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Abstraksi dalam Algoritma</h4>
+                    <p>Algoritma sering menggunakan abstraksi untuk menyederhanakan masalah. Misalnya, dalam algoritma pencarian, kita mengabstraksi "mencari item" tanpa peduli detail struktur data yang digunakan. Abstraksi juga digunakan dalam matematika komputasional untuk menyederhanakan model kompleks menjadi formula yang dapat dihitung secara efisien.</p>
+                    <div class="interactive-demo">
+                        <h5>Demo Interaktif: Algoritma Pencarian</h5>
+                        <div class="search-demo">
+                            <input type="text" id="search-array" placeholder="Masukkan array (pisah dengan koma)" value="5, 2, 8, 1, 9, 3">
+                            <input type="number" id="search-target" placeholder="Cari angka">
+                            <button id="linear-search">Pencarian Linear</button>
+                            <button id="binary-search">Pencarian Biner</button>
+                            <div id="search-result"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Manfaat Abstraksi</h4>
+                    <p>Abstraksi meningkatkan produktivitas dengan menyederhanakan tugas kompleks, memungkinkan fokus pada masalah utama, dan memfasilitasi kolaborasi tim. Dalam pendidikan, membantu siswa mengembangkan kemampuan analisis dan generalisasi. Dalam industri, abstraksi menjadi dasar untuk scalable software architecture dan modular design yang mudah di-maintain.</p>
+                </div>
+                <div class="subtopic">
+                    <h4>Abstraksi dalam Matematika</h4>
+                    <p>Dalam matematika, abstraksi melibatkan generalisasi konsep seperti bilangan (dari bilangan konkret menjadi bilangan abstrak seperti kompleks atau matriks), geometri (dari bentuk fisik menjadi teorema dan aksioma), dan aljabar (dari persamaan spesifik menjadi struktur aljabar umum). Abstraksi ini memungkinkan matematikawan mengembangkan teori yang berlaku universal, seperti teori grup atau teori himpunan, yang menyederhanakan pemahaman pola dan hubungan matematika.</p>
+                    <div class="media-content">
+                        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&h=250&fit=crop&crop=center" alt="Ilustrasi Abstraksi Matematika" class="topic-image">
+                        <p class="image-caption">Abstraksi dalam konsep matematika seperti bilangan kompleks</p>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h4>Abstraksi dalam Seni</h4>
+                    <p>Abstraksi dalam seni melibatkan penyederhanaan bentuk visual menjadi esensi, seperti dalam seni abstrak modern di mana seniman seperti Kandinsky atau Mondrian menggeneralisasi warna dan bentuk geometris untuk mengekspresikan ide tanpa representasi realistis. Teknik ini membantu seniman fokus pada emosi, harmoni, atau konsep filosofis, mengabaikan detail dunia nyata untuk menciptakan karya yang universal dan subjektif.</p>
+                    <div class="media-content">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center" alt="Ilustrasi Abstraksi dalam Seni" class="topic-image">
+                        <p class="image-caption">Contoh seni abstrak yang menyederhanakan bentuk dan warna</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-activity">
+                <h3>Aktivitas Interaktif: Pilih Informasi Penting</h3>
+                <p>Dari teks berikut, pilih informasi penting untuk membuat peta:</p>
+                <div class="abstraction-activity">
+                    <p id="text-to-abstract">Teks: Jakarta adalah ibu kota Indonesia dengan populasi sekitar 10 juta orang. Kota ini terletak di pulau Jawa dan memiliki banyak gedung tinggi. Cuaca di Jakarta biasanya panas dan lembab sepanjang tahun.</p>
+                    <div class="options">
+                        <label><input type="checkbox" value="ibu kota"> Ibu kota</label>
+                        <label><input type="checkbox" value="populasi"> Populasi 10 juta</label>
+                        <label><input type="checkbox" value="pulau Jawa"> Pulau Jawa</label>
+                        <label><input type="checkbox" value="gedung tinggi"> Gedung tinggi</label>
+                        <label><input type="checkbox" value="cuaca panas"> Cuaca panas</label>
+                    </div>
+                    <button id="check-abstraction">Periksa</button>
+                    <p id="abstraction-feedback"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
