@@ -1078,4 +1078,32 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Scroll animation for topic cards
+    const topicCards = document.querySelectorAll('.card');
+    if (topicCards.length > 0) {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add delay based on index for staggered animation
+                    setTimeout(() => {
+                        if (index % 2 === 0) {
+                            entry.target.classList.add('animate-left');
+                        } else {
+                            entry.target.classList.add('animate-right');
+                        }
+                    }, index * 200); // 200ms delay between each card
+                }
+            });
+        }, observerOptions);
+
+        topicCards.forEach(card => {
+            observer.observe(card);
+        });
+    }
 });

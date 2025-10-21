@@ -1,18 +1,22 @@
-# TODO: Perbaiki Tampilan Nav-Menu Mobile
+# TODO: Tambahkan Animasi Scroll untuk Kartu Materi
 
-## Tugas Utama
-- Ubah tampilan nav-menu di mobile agar minimalis (tidak menutupi full layar)
-- Sesuaikan ukuran menu sesuai dengan jumlah item (8 menu items)
+## Status: In Progress
 
-## Langkah-langkah
-- [x] Edit CSS di main.css untuk bagian mobile nav-menu
-- [x] Ubah width dari 100% menjadi 250px
-- [x] Ubah height dari 100vh menjadi auto atau max-height 80vh
-- [x] Sesuaikan posisi right dari -100% menjadi -250px
-- [x] Test tampilan di browser mobile view
-- [x] Pastikan backdrop tetap berfungsi
+### Tugas Utama
+- Tambahkan animasi masuk dari kiri dan kanan untuk kartu materi saat scroll di halaman materi.html
 
-## Status
-- [x] Analisis kode selesai
-- [x] Implementasi perubahan
-- [x] Testing
+### Langkah-langkah Implementasi
+- [ ] Tambahkan keyframe animasi slideInLeft dan slideInRight di css/main.css
+- [ ] Update class .card di css/main.css untuk opacity dan transform default
+- [ ] Tambahkan Intersection Observer di js/main.js untuk mendeteksi kartu masuk viewport
+- [ ] Tambahkan class animasi berdasarkan index kartu (genap: kiri, ganjil: kanan)
+- [ ] Test animasi dengan scroll menggunakan browser_action
+
+### File yang Terpengaruh
+- css/main.css: Menambahkan animasi CSS
+- js/main.js: Menambahkan JavaScript untuk Intersection Observer
+
+### Catatan
+- Kartu pertama dan ketiga masuk dari kiri
+- Kartu kedua dan keempat masuk dari kanan
+- Animasi menggunakan ease-out dengan durasi 0.8s
