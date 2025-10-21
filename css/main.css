@@ -954,7 +954,7 @@ video {
     top: 0;
     right: -250px;
     width: 250px;
-    height: 100vh;
+    height: auto;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(15px);
     flex-direction: column;
@@ -964,6 +964,8 @@ video {
     z-index: 1000;
     overflow-y: auto;
     display: none;
+    max-height: 90vh;
+    overflow-y: disable;
     }
 
     #nav-menu.active {
