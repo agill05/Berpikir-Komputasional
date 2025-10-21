@@ -1102,8 +1102,21 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }, observerOptions);
 
-        topicCards.forEach(card => {
+        topicCards.forEach((card, index) => {
             observer.observe(card);
+
+            // Check if card is already in viewport on load (for mobile)
+            const rect = card.getBoundingClientRect();
+            const isInViewport = rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+            if (isInViewport) {
+                setTimeout(() => {
+                    if (index % 2 === 0) {
+                        card.classList.add('animate-left');
+                    } else {
+                        card.classList.add('animate-right');
+                    }
+                }, index * 200);
+            }
         });
     }
 });
